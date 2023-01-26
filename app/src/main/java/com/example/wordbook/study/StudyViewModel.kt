@@ -35,6 +35,10 @@ class StudyViewModel(application: Application): AndroidViewModel(application) {
         loadWords()
     }
 
+
+
+
+
     private fun loadWords() {
         viewModelScope.launch {
             words = repository.getWordList().shuffled()
@@ -46,6 +50,7 @@ class StudyViewModel(application: Application): AndroidViewModel(application) {
             _word.value = words[idx]
         }
     }
+
 
     fun loadNextWord() {
         idx = if (idx < words.size - 1) idx + 1 else 0

@@ -1,6 +1,7 @@
 package com.example.wordbook.study
 
 import android.content.Context
+import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,6 +24,7 @@ class StudyFragment : Fragment() {
         fun newInstance() = StudyFragment()
     }
 
+
     private lateinit var viewModel: StudyViewModel
     private lateinit var binding: FragmentStudyBinding
     private lateinit var backPressCallback: OnBackPressedCallback
@@ -31,6 +33,8 @@ class StudyFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_study, container, false)
         viewModel = ViewModelProvider(this).get(StudyViewModel::class.java)

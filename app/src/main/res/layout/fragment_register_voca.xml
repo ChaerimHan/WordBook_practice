@@ -14,6 +14,7 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
+
         <TextView
             android:id="@+id/english"
             android:layout_width="wrap_content"
@@ -38,7 +39,8 @@
             app:layout_constraintLeft_toRightOf="@id/english"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/english"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
             android:id="@+id/means_input"
@@ -51,7 +53,8 @@
             app:layout_constraintLeft_toRightOf="@id/english"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/means"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/means"
@@ -79,13 +82,74 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="408dp"
+            android:layout_height="707dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/means_input"
-            app:srcCompat="@drawable/backco" />
+            app:srcCompat="@drawable/backco"
+            tools:layout_editor_absoluteY="238dp" />
+
+
+
+        <TextView
+            android:id="@+id/cat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/category"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/means" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/cat_text"
+            app:layout_constraintTop_toBottomOf="@+id/means_input">
+
+            <RadioButton
+                android:id="@+id/toeflButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Toefl" />
+
+            <RadioButton
+                android:id="@+id/toeicButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Toeic" />
+
+            <RadioButton
+                android:id="@+id/suneungButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/suneung_word" />
+
+            <RadioButton
+                android:id="@+id/gongsiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gongsi_word" />
+
+            <RadioButton
+                android:id="@+id/etcButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/etc_word" />
+
+        </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

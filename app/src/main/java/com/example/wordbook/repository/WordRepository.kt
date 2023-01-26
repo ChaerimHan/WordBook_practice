@@ -40,4 +40,19 @@ class WordRepository(private val database: WordDatabase) {
             database.wordDao.getCount()
         }
     }
+
+/*
+   suspend fun searchMeanCategory(searchQuery : String) : List<Word>{
+       return withContext(Dispatchers.IO) {
+            database.wordDao.searchMeanCategory(searchQuery )
+        }
+    }
+
+    suspend fun searchEngCategory(searchQuery : String) : List<Word>{
+        return withContext(Dispatchers.IO) {
+            database.wordDao.searchEngCategory(searchQuery )
+        }
+    }
+
+*/
 }

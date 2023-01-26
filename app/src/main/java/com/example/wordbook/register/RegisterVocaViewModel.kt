@@ -13,7 +13,7 @@ class RegisterVocaViewModel(application: Application): AndroidViewModel(applicat
 
     fun registerWord(word: Word) {
         viewModelScope.launch {
-            repository.save(word)
+                repository.save(word)
         }
     }
 }

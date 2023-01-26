@@ -23,6 +23,14 @@ fun TextView.setMeans(word: Word?) {
     } ?: ""
 }
 
+/*카테고리를 위한 어댑터 생성.. 해볼랬는데 적용을 못하겠음
+@BindingAdapter("category")
+fun TextView.setCat(word: Word?) {
+    text = word?.let {
+        it.category
+    } ?: ""
+}*/
+
 @BindingAdapter("studyEnglishVisibility")
 fun TextView.setStudyEnglishVisibility(studyType: StudyViewModel.StudyType) {
     visibility = when (studyType) {

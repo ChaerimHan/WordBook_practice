@@ -6,6 +6,8 @@ import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
 
+
+//쿼리문
 @Dao
 interface WordDao {
     @Insert
@@ -25,4 +27,13 @@ interface WordDao {
 
     @Query("select count(*) from words")
     suspend fun getCount(): Int
+    //SQL쿼리문 저장해두고 함수로 만든거 !!
+
+/*
+    @Query("SELECT category FROM words WHERE english LIKE :searchQuery")
+    fun searchEngCategory(searchQuery : String) : List<Word>
+
+    @Query("SELECT category FROM words WHERE means LIKE :searchQuery")
+    fun searchMeanCategory(searchQuery : String) : List<Word>
+*/
 }

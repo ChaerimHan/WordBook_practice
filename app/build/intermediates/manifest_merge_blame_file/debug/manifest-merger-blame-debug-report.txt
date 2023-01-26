@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.wordbook"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->[androidx.media:media:1.4.1] C:\Users\allab\.gradle\caches\transforms-3\512e70062d977032697d0df93402e586\transformed\media-1.4.1\AndroidManifest.xml:24:5-28:15
+12        <intent>
+12-->[androidx.media:media:1.4.1] C:\Users\allab\.gradle\caches\transforms-3\512e70062d977032697d0df93402e586\transformed\media-1.4.1\AndroidManifest.xml:25:9-27:18
+13            <action android:name="android.media.browse.MediaBrowserService" />
+13-->[androidx.media:media:1.4.1] C:\Users\allab\.gradle\caches\transforms-3\512e70062d977032697d0df93402e586\transformed\media-1.4.1\AndroidManifest.xml:26:13-79
+13-->[androidx.media:media:1.4.1] C:\Users\allab\.gradle\caches\transforms-3\512e70062d977032697d0df93402e586\transformed\media-1.4.1\AndroidManifest.xml:26:21-76
+14        </intent>
+15    </queries>
+16
+17    <application
+17-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:6:5-25:19
+18        android:allowBackup="true"
+18-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:7:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.7.0] C:\Users\allab\.gradle\caches\transforms-3\d409417959c78fbf29d76ceae9660126\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:8:9-65
+21        android:debuggable="true"
+22        android:fullBackupContent="@xml/backup_rules"
+22-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:9:9-54
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:10:9-43
+24        android:label="@string/app_name"
+24-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:11:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:12:9-54
+26        android:supportsRtl="true"
+26-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:13:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.WordBook" >
+28-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:14:9-46
+29        <activity
+29-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:16:9-24:20
+30            android:name="com.example.wordbook.BaseActivity"
+30-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:17:13-41
+31            android:exported="true" >
+31-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:18:13-36
+32            <intent-filter>
+32-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:19:13-23:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:20:17-69
+33-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:20:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:22:17-77
+35-->C:\guru2\DicSWUnary_App_Dev_Project_Result\app\src\main\AndroidManifest.xml:22:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <service
+39-->[androidx.room:room-runtime:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\57b6b687c800e2f2e2f6c5778e7c9f4b\transformed\room-runtime-2.4.0\AndroidManifest.xml:25:9-28:40
+40            android:name="androidx.room.MultiInstanceInvalidationService"
+40-->[androidx.room:room-runtime:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\57b6b687c800e2f2e2f6c5778e7c9f4b\transformed\room-runtime-2.4.0\AndroidManifest.xml:26:13-74
+41            android:directBootAware="true"
+41-->[androidx.room:room-runtime:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\57b6b687c800e2f2e2f6c5778e7c9f4b\transformed\room-runtime-2.4.0\AndroidManifest.xml:27:13-43
+42            android:exported="false" />
+42-->[androidx.room:room-runtime:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\57b6b687c800e2f2e2f6c5778e7c9f4b\transformed\room-runtime-2.4.0\AndroidManifest.xml:28:13-37
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+46            android:authorities="com.example.wordbook.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\allab\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\allab\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+54        </provider>
+55    </application>
+56
+57</manifest>
